@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     IT633 : Mobile Application Development
+     Final Project Part I Milesone One: submit_order.xml
+     Submit Order Screen
+     Student: Tisha Holder
+     Instructor: Venkatesh Baglodi
+-->
+
+<!--  main page layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tishay.acerestaurantapp.menu_screen_activity"
+    android:orientation="vertical">
+
+    <!--  main page layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <!--toolbar/app bar -->
+        <include
+            android:id="@+id/orderconfirmation_toolbar"
+            layout="@layout/custom_orderconfirmation_actionbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></include>
+
+
+        <!-- nested table layout - blank for formatting purposes -->
+        <TableLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <!--blank-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textAlignment="center">
+
+                </TextView>
+
+            </TableRow>
+        </TableLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:background="#4096ef">
+
+            <!-- thanks you message -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:textColor="#ffffff"
+                android:text="THANKS FOR YOUR ORDER!"
+                android:textSize="25sp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:typeface="normal"
+                android:textAlignment="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+        </LinearLayout>
+
+        <!-- nested linear layout - blank for formatting purposes -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--blank-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textAlignment="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <!-- nested linear layout - blank for formatting purposes -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--blank-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textAlignment="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <!-- order confirmation list view -->
+        <include
+            android:id="@+id/orderconfirmationlistview"
+            layout="@layout/orderconfirmationlistview_custom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></include>
+
+
+
+    </LinearLayout>
+
+
+    <TableRow
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        //feedback button
+        <Button android:id="@+id/onlineexperience"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Tell Us About Your Online Experience Today"
+            android:textAlignment="center"
+            android:background="@color/blue"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff">
+
+        </Button>
+
+    </TableRow>
+
+
+</RelativeLayout>
+
+
+
+

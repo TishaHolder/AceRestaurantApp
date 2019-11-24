@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     IT633 : Mobile Application Development
+     Final Project Part I Milesone One: item.xml
+     How each item will display in a list view in both the Catalog and Shopping Cart activities.
+     Student: Tisha Holder
+     Instructor: Venkatesh Baglodi
+-->
+
+<!--  main page layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:id="@+id/LinearLayoutItem1">
+
+    <!--  main page layout -->
+    <LinearLayout android:id="@+id/linearLayoutDetails"
+        android:orientation="horizontal" android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        //placeholder for item image in product catalog and shopping cart
+        <ImageView
+            android:layout_margin="5dip"
+            android:id="@+id/ImageViewItem"
+            android:layout_width="100dp"
+            android:layout_height="80dp">
+
+        </ImageView>
+
+
+        //placeholder for item title in product catalog and shopping cart
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:id="@+id/TextViewItem"
+            android:textSize="20dip"
+            android:text="Item Title"
+            android:textColor="#000000"
+            android:minLines="2"
+            android:maxWidth="150dip">
+
+        </TextView>
+
+        <!-- blank for formatting purposes -->
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </TextView>
+
+        <!-- placeholder for item price in product catalog and shopping cart -->
+        <TextView
+            android:text="Price:"
+            android:id="@+id/TextViewPrice"
+            android:textSize="18dip"
+            android:textColor="#0e0c0c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/linearLayoutQuantity"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        //text view with the word Quantity that displays the number of items in the shopping cart
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity:"
+            android:textSize="18dip"
+            android:textColor="#000000"
+            android:id="@+id/textViewQuantity">
+
+        </TextView>
+
+    </LinearLayout>
+
+<!-- main page layout closing tag -->
+</LinearLayout>

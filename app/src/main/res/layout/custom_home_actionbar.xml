@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     IT633 : Mobile Application Development
+     Final Project Part I Milesone One: custom_home_actionbar.xml
+     Home Screen App Bar
+     Student: Tisha Holder
+     Instructor: Venkatesh Baglodi
+-->
+
+<!-- app bar -->
+<android.support.v7.widget.Toolbar android:id="@+id/home_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!-- main screen layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeactionbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <TableRow android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <!-- menu icon image from drawable resource -->
+            <ImageView
+                android:id="@+id/menubutton_icon"
+                android:src="@drawable/menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center" />
+
+         <!-- ace logo image from drawable resource -->
+         <ImageView
+                android:id="@+id/acelogo_icon"
+                android:src="@drawable/acelogocroppededited"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="?attr/actionBarSize"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="right" />
+
+         <!-- shopping basket icon image from drawable resource -->
+         <ImageView
+                android:id="@+id/shoppingbasketbutton_icon"
+                android:src="@drawable/shoppingbasket"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="?attr/actionBarSize"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center" />
+
+        </TableRow>
+
+    </TableLayout>
+
+<!-- main page layout closing tag -->
+</LinearLayout>
+
+<!-- app bar closing tag -->
+</android.support.v7.widget.Toolbar>
+
+

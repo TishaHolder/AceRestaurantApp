@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tishay.acerestaurantapp">
+
+    android:largeHeap="true"
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:logo="@drawable/acelogocropped"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".menu_screen_activity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.menu_screen_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FineDiningCatalogActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.FineDiningCatalogActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FineDiningProductDetailsActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.FineDiningProductDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IslandDrinksCatalogActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.IslandDrinksCatalogActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IslandDrinksProductDetailsActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.IslandDrinksProductDetialsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IslandFlavorCatalogActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.IslandFlavorCatalogActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IslandFlavorProductDetailsActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.IslandFlavorProductDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SeaFoodCatalogActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.SeaFoodCatalogActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SeaFoodProductDetailsActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.SeaFoodProductDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShoppingCartActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.ShoppingCartActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SubmitOrderActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.SubmitOrderActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DessertCatalogActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.DessertCatalogActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DessertProductDetailsActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.DessertProductDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SaladCatalogActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.SaladCatalogActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SaladProductDetailsActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.SaladProductDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OrderConfirmationActivity">
+            <intent-filter>
+                <action android:name="com.example.tishay.acerestaurantapp.OrderConfirmationActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

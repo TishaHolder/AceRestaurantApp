@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     IT633 : Mobile Application Development
+     Final Project Part I Milesone One: homelistview_custom_layout.xml
+     Home Screen List View Custom Layout
+     Student: Tisha Holder
+     Instructor: Venkatesh Baglodi
+-->
+
+<!--main page layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homelistview"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp">
+
+
+    <!-- nested linear layout -->
+    <LinearLayout
+        android:id="@+id/restaurantmenurow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/homelistviewshape">
+
+        <!-- menu icon image from drawable resource -->
+        <ImageView
+            android:paddingTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:src="@drawable/restaurant_menu_opacity"/>
+
+
+        <!-- menu text -->
+        <TextView
+            android:layout_width="100dp"
+            android:textColor="#000000"
+            android:text="Menu"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <!--blank for formatting purposes-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textAlignment="center"/>
+
+    <!-- nested linear layout -->
+    <LinearLayout
+        android:id="@+id/onlineorderingrow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/homelistviewshape">
+
+        <!-- online ordering image from drawable resource -->
+        <ImageView
+            android:paddingTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:src="@drawable/onlineordering"/>
+
+        <!-- online ordering text -->
+        <TextView
+            android:layout_width="300dp"
+            android:textColor="#000000"
+            android:text="Online Ordering"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <!--blank for formatting purposes-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textAlignment="center"/>
+
+    <!-- nested linear layout -->
+    <LinearLayout
+        android:id="@+id/cateringrow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/homelistviewshape">
+
+        <!-- catering icon image from drawable resource -->
+        <ImageView
+            android:paddingTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:src="@drawable/catering"/>
+
+        <!-- catering text -->
+        <TextView
+            android:layout_width="300dp"
+            android:textColor="#000000"
+            android:text="Catering"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <!--blank for formatting purposes-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textAlignment="center"/>
+
+    <!-- nested linear layout -->
+    <LinearLayout
+        android:id="@+id/reservationsrow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/homelistviewshape">
+
+        <!-- reservations icon image from drawable resource -->
+        <ImageView
+            android:paddingTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:src="@drawable/reservations"/>
+
+        <!-- reservations text -->
+        <TextView
+            android:layout_width="300dp"
+            android:textColor="#000000"
+            android:text="Reservations"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <!--blank for formatting purposes-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textAlignment="center"/>
+
+    <!-- nested linear layout - blank for formatting purposes -->
+    <LinearLayout
+        android:id="@+id/signinrow"
+        android:paddingTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- sign in link -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#f5121d"
+            android:text="SIGN IN"
+            android:textSize="15sp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:typeface="normal"
+            android:layout_weight="0.5"/>
+
+            <!--blank-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="   "/>
+
+        <!-- register link -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#f5121d"
+            android:text="REGISTER"
+            android:textSize="15sp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:typeface="normal"
+            android:layout_weight="0.5"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+<!-- end of main layout -->
+</LinearLayout>
+

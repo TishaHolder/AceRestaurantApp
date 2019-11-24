@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">Ace Restaurant</string>
+
+    <string name="menu_icon" type="title" />
+
+    <item name="finedining1_name" type="id" />
+
+    <item name="finedining1_pricelabel" type="id" />
+
+    <item name="finedining1_spinner" type="id" />
+
+    <item name="finedining1_addbutton" type="id" />
+
+    <item name="finedining2_spinner" type="id" />
+
+    <item name="finedining3_spinner" type="id" />
+
+    <item name="finedining4_spinner" type="id" />
+
+    <string-array name="spinnerQtyArray">
+        <item> one </item>
+        <item> two </item>
+        <item> three </item>
+        <item> four </item>
+        <item> five </item>
+    </string-array>
+
+    <string name="spinnerQtyPrompt">Qty</string>
+
+</resources>

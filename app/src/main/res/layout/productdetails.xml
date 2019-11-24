@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     IT633 : Mobile Application Development
+     Final Project Part I Milesone One: productdetails.xml
+     Details about each product
+     Student: Tisha Holder
+     Instructor: Venkatesh Baglodi
+-->
+
+<!--  main page layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tishay.acerestaurantapp.menu_screen_activity">
+
+    <!--  main page layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/homelistviewshape">
+
+        <!--toolbar/app bar -->
+        <include
+            android:id="@+id/menuscreen_toolbar"
+            layout="@layout/custom_menuscreen_actionbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></include>
+
+
+        <!-- nested linear layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:paddingBottom="5dp">
+
+
+            <!-- item name -->
+            <TextView
+                android:id="@+id/TextViewProductTitle"
+                android:textColor="#0e0c0c"
+                android:text="Product Title"
+                android:textSize="20sp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:typeface="normal"
+                android:layout_gravity="left"/>
+
+            <!-- blank -->
+            <TextView
+                android:textColor="#0e0c0c"
+                android:text="   "
+                android:textSize="20sp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:typeface="normal"
+                android:layout_gravity="left"/>
+
+            <!-- price label -->
+            <TextView
+                android:id="@+id/TextViewProductPrice"
+                android:layout_span="1"
+                android:textColor="#0e0c0c"
+                android:text="Product Price"
+                android:textSize="20sp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:typeface="normal"
+                android:layout_gravity="right"/>
+
+
+    </LinearLayout>
+
+        <!-- nested linear layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!-- product image from drawable resource -->
+            <ImageView
+                android:id="@+id/ImageViewProduct"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/dessert_homepage"
+                android:layout_weight="2.72"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:background="#ffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <!--first row with first item-->
+            <TableRow>
+
+                <!-- item description -->
+                <TextView
+                    android:id="@+id/TextViewProductDetails"
+                    android:layout_width="wrap_content"
+                    android:textColor="#0e0c0c"
+                    android:text="Product Description"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:typeface="normal"
+                    android:layout_gravity="left"/>
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCurrentlyInCart"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        //text view with text "item name currently in cart"
+        <TextView
+            android:id="@+id/textViewCurrentlyInCart"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_width="wrap_content"
+            android:textColor="#0e0c0c"
+            android:textSize="18sp"
+            android:text="Currently in Cart:"
+            android:layout_gravity="left">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAddLayout"
+        android:layout_margin="5dip"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        //text view with word "Quantity"
+        <TextView android:id="@+id/textView1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Quantity:"
+            android:textColor="#0e0c0c"
+            android:textSize="18sp">
+
+        </TextView>
+
+        //user enters quantity
+        <EditText android:gravity="center"
+            android:id="@+id/editTextQuantity"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="400px"
+            android:text="1"
+            android:backgroundTint="#4096ef"
+            android:inputType="number">
+
+        </EditText>
+
+
+    </LinearLayout>
+        </LinearLayout>
+
+        <TableRow
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            //remove from cart button
+            <Button
+                android:id="@+id/removefromcart_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Remove from Cart"
+                android:textAlignment="center"
+                android:background="@color/blue"
+                android:textSize="17sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.5"
+                android:textColor="#ffffff"/>
+
+
+            <!-- blank for formatting purposes -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#0e0c0c"
+                android:text="   "
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:typeface="normal"
+                android:layout_gravity="left"/>
+
+            //add to cart button
+            <Button android:id="@+id/ButtonAddToCart"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="Add to Cart"
+                android:textAlignment="center"
+                android:background="@color/blue"
+                android:textSize="20sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.5"
+                android:textColor="#ffffff"/>
+
+
+
+
+</TableRow>
+
+<!-- main page layout closing tag -->
+</RelativeLayout>
+

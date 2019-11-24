@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+     IT633 : Mobile Application Development
+     Final Project Part I Milesone One: orderconfirmationlistview_custom_layout.xml
+     Home Screen
+     Student: Tisha Holder
+     Instructor: Venkatesh Baglodi
+-->
+
+<!--  main page layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homelistview"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp">
+
+
+    <!-- nested linear layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/homelistviewshape">
+
+        <!-- order ready icon image from drawable resource -->
+        <ImageView
+            android:paddingTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:src="@drawable/orderready_icon"/>
+
+
+        <!-- 15 minutes text -->
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_width="fill_parent"
+            android:textColor="#000000"
+            android:text="15 Minutes"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <!-- nested linear layout - blank for formatting purposes -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--blank-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textAlignment="center">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <!-- nested linear layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/homelistviewshape">
+
+        <!-- shopping basket icon image from drawable resource -->
+        <ImageView
+            android:paddingTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:src="@drawable/shoppingbasket_opacity"/>
+
+
+        <!-- pickp inside text -->
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_width="fill_parent"
+            android:textColor="#000000"
+            android:text="Pickup Inside"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <!-- nested linear layout - blank for formatting purposes -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--blank-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textAlignment="center">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <!-- nested linear layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/homelistviewshape">
+
+        <!-- cash icon image from drawable resource -->
+        <ImageView
+            android:paddingTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pay_icon"/>
+
+
+        <!-- cash/credit card/gift card text -->
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_width="fill_parent"
+            android:textColor="#000000"
+            android:text="Cash/Credit/Gift Card"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+<!-- main page layout closing tag -->
+</LinearLayout>
+

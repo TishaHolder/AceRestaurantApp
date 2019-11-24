@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     IT633 : Mobile Application Development
+     Final Project Part I Milesone One: activity_main.xml
+     Home Screen
+     Student: Tisha Holder
+     Instructor: Venkatesh Baglodi
+-->
+
+<!--navigation drawer open tag-->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!-- scroll view -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--main page layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true">
+
+    <!--toolbar/app bar -->
+    <include
+        android:id="@+id/home_toolbar"
+        layout="@layout/custom_home_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></include>
+
+    <!-- nested linear layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <!-- home page image from drawable resource -->
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/dessert_homepage"
+            android:layout_weight="2.72"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+
+    <!-- nested linear layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#4096ef">
+
+        <!-- restaurant slogan -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:id="@+id/orderonthego_label"
+            android:textColor="#ffffff"
+            android:text="ORDER ON THE GO!"
+            android:textSize="30sp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <!-- nested linear layout - blank for formatting purposes -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--blank-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textAlignment="center">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <!-- nested linear layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- custom home screen list view -->
+        <include
+            android:id="@+id/homelistview"
+            layout="@layout/homelistview_custom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></include>
+
+    </LinearLayout>
+
+    <!-- nested linear layout - blank for formatting purposes -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--blank-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textAlignment="center">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+<!-- end of main layout -->
+</LinearLayout>
+
+</ScrollView>
+
+    <!-- navigation drawer list view -->
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="0dp"
+        android:background="#696969"/>
+
+<!-- navigation drawer closing tag -->
+</android.support.v4.widget.DrawerLayout>
+

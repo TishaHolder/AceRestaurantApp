@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     IT633 : Mobile Application Development
+     Final Project Part I Milesone One: custom_checkout_actionbar.xml
+     Checkout Screen App Bar
+     Student: Tisha Holder
+     Instructor: Venkatesh Baglodi
+-->
+
+<!-- app bar -->
+<android.support.v7.widget.Toolbar android:id="@+id/checkoutscreen_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- main page layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/checkoutactionbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- back button icon image from drawable resource -->
+                <ImageView
+                    android:id="@+id/backbutton_checkoutscreen"
+                    android:src="@drawable/backarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_gravity="center" />
+
+                <!-- screen title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#000000"
+                    android:text="My Order"
+                    android:textSize="25sp"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="?attr/actionBarSize"
+                    android:typeface="normal" />
+
+
+
+                <!-- home button icon image from drawable resource -->
+                <ImageView
+                    android:id="@+id/homebutton_checkoutscreen"
+                    android:src="@drawable/homeicon_opacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="?attr/actionBarSize"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_gravity="center|bottom" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    <!-- closing tag for main page layout -->
+    </LinearLayout>
+
+<!-- app bar closing tag -->
+</android.support.v7.widget.Toolbar>
+
+
+
