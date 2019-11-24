@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Tishay\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_94c18ef955d05e8e47729a7102d8447e6ef3f355\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_7216e64e69ab755274254a6c94d2f663e56c0118\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_d8b5ee6e33fcc40ea1d1c808d8d9ef123ba81a12\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_70d92fd29f33316f509bbcc1a4674c9a1f667361\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="27e60626bceca0703aa17a456f1f028acb267674">
+        <dex dex="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3ad9a514b6ec1a694ea30fce47d691e9990d72dd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_b0f78f5e69616da9109545eeaefcb995f4da1d54\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_23a6b59283f4c6889550fdee5f22f8f03a26409f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="18187ef14541fb33014aa5359322ec259afebf26">
+        <dex dex="C:\Users\Tishay\Desktop\AceRestaurantApp\AceRestaurantApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1b8e18cfeab6fc73db7b163086cde524e18a356c\classes.dex" />
+    </item>
+
+</items>
